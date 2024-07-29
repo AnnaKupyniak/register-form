@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Summer Camp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header-container">
+        <img src="palm.png" alt="Summer Camp Logo">
+        <h1 id="title">Summer Camp Form</h1>
+    </div>
+    <p id="description">Welcome to our summer camp</p>
+    <form id="survey-form">
+    <fieldset>
+      
+      <label id="name-label" for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+      
+      <label id="last-name-label" for="last-name">Last name:</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required><br>
+      
+      <label id="number-label" for="number">Input your age (years):</label>
+      <input id="number" type="number" name="age" placeholder="Enter age" min="13" max="120" required><br>
+      
+      <label for="dropdown">Gender:</label>
+      <select id="dropdown" name="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select><br>
+      
+      <label for="phone">Phone number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+      
+      <label id="email-label" for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+      
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+    </fieldset>
+    
+    <fieldset>
+      <label for="source">How did you hear about us?</label>
+      <select id="source" name="source" required>
+        <option value="">Select</option>
+        <option value="instagram">Instagram</option>
+        <option value="telegram">Telegram</option>
+        <option value="tiktok">Tik Tok</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
+    
+    <fieldset>
+      <legend>In which program are you interested?</legend>
+      <label><input type="radio" name="program" value="coding" class="inline"> Coding</label>
+      <label><input type="radio" name="program" value="management" class="inline"> Project management</label>
+      <label><input type="radio" name="program" value="design" class="inline"> Graphic design</label>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Additional Preferences</legend>
+      <label for="newsletter">
+        <input type="checkbox" id="newsletter" name="newsletter"
+        class="inline"  value="subscribe"> Subscribe to newsletter
+      </label><br>
+      <label for="updates">
+        <input type="checkbox" id="updates" name="updates" 
+class="inline"        value="receive-updates"> Receive updates about upcoming events
+      </label>
+    </fieldset>
+    
+    <label for="terms-and-conditions">
+      <input class="inline" id="terms-and-conditions" type="checkbox" name="terms-and-conditions" value="agree" required> I accept the <a href="https://terms and conditions">terms and conditions</a>
+    </label><br>
+    
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</body>
+</html>
